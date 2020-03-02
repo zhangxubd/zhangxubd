@@ -1,1 +1,60 @@
-theme: jekyll-theme-cayman
+title: "张旭"
+repo: zhangxudb/zhangxudb.github.io
+email: 2513320789@qq.com
+description: "记录自己 Study"
+excerpt_separator: "true"
+themeColor: "#ffffff"
+baseurl: "/" # the subpath of your site, e.g. /blog
+url: "https://zhangxudb.github.io"
+lang: zh
+paginate: 8
+paginate_path: "/page/:num"
+metaAuthor: "张旭"
+blogName: "张旭笔记"
+appTitle: "张旭笔记"
+twitter_username: null
+github_username: zhnagxudb
+destination: "./gphome"
+collections:
+  authors:
+    output: true
+  staff_members:
+    output: true
+    # people: true
+
+author:
+  twitter: null
+
+baidu:
+  appid: null
+
+ga:
+  userid: null
+
+twitter:
+  username: null
+  card: summary_large_image
+  site: ""
+
+defaults:
+  - scope:
+      path: "_authors"
+      type: "posts"
+    values:
+      layout: "author"
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      author: "zhanghe"
+  - scope:
+      path: ""
+    values:
+      layout: "default"
+
+plugins:
+  - jekyll-remote-theme
+
+markdown: kramdown
+remote_theme: zhanghecool/yoyoyo
